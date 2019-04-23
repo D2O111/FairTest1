@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<allocations>
+<queue name="root">
+  <aclSubmitApps>a</aclSubmitApps>
+  <aclAdministerApps>a</aclAdministerApps>
+  <schedulingPolicy>fair</schedulingPolicy>
+  <maxRunningApps>10</maxRunningApps>
+  <label>*</label>
+  <defaultLabelExpression>*</defaultLabelExpression>
+
+<queue name="default">
+   <minResources>0 mb,0 vcores</minResources>
+   <maxResources>0 mb,0 vcores</maxResources>
+   <maxRunningApps>0</maxRunningApps>
+   <maxAMShare>0.5</maxAMShare>
+   <weight>1.0</weight>
+   <aclSubmitApps>*</aclSubmitApps>
+   <schedulingPolicy>fair</schedulingPolicy>
+</queue>   
+
+    <queue name="a">
+       <minResources>10000 mb,500 vcores</minResources><!--定时更新标志误删1-->
+       <maxResources>10000 mb,500 vcores</maxResources><!--定时更新标志误删2-->
+       <maxRunningApps>50</maxRunningApps>
+       <maxAMShare>0.7</maxAMShare>
+       <weight>1.0</weight>
+       <aclSubmitApps>a</aclSubmitApps>
+       <aclAdministerApps>b</aclAdministerApps>
+       <schedulingPolicy>fair</schedulingPolicy>
+       <queue name="b">
+            <minResources>10000 mb,500 vcores</minResources><!--定时更新标志误删1-->
+            <maxResources>10000 mb,500 vcores</maxResources><!--定时更新标志误删2-->
+       </queue>
+    </queue>
+
+</queue>
