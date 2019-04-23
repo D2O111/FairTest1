@@ -19,8 +19,8 @@
 </queue>   
 
     <queue name="a">
-       <minResources>10000 mb,500 vcores</minResources><!--定时更新标志误删1-->
-       <maxResources>10000 mb,500 vcores</maxResources><!--定时更新标志误删2-->
+       <minResources>15000 mb,1000 vcores</minResources><!--定时更新标志误删1-->
+       <maxResources>15000 mb,1000 vcores</maxResources><!--定时更新标志误删2-->
        <maxRunningApps>50</maxRunningApps>
        <maxAMShare>0.7</maxAMShare>
        <weight>1.0</weight>
@@ -28,8 +28,8 @@
        <aclAdministerApps>b</aclAdministerApps>
        <schedulingPolicy>fair</schedulingPolicy>
        <queue name="b">
-            <minResources>10000 mb,500 vcores</minResources><!--定时更新标志误删1-->
-            <maxResources>10000 mb,500 vcores</maxResources><!--定时更新标志误删2-->
+            <minResources>15000 mb,1000 vcores</minResources><!--定时更新标志误删1-->
+            <maxResources>15000 mb,1000 vcores</maxResources><!--定时更新标志误删2-->
        </queue>
     </queue>
 
